@@ -6,29 +6,46 @@
     <title>Currículum Vitae</title>
     <style>
         body {
-
-    	background-color: lightblue; /*celeste*/
-}
+            background-color: #E6E6FA; /* Color de fondo lila pastel */
             font-family: Arial, sans-serif;
-            margin: 20px;
+            color: black; /* Color de la fuente */
+            margin: 0;
             padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            max-width: 800px;
-            background-color: #f9f9f9;
+	}
+        .container {
+            display: flex; /* Usamos flexbox para el diseño */
+            flex-wrap: wrap; /* Permite que los bloques se ajusten a la línea siguiente */
+            justify-content: space-between; /* Espaciado entre bloques */
+        }
+        .bloque {
+          
+            color: lila; /* Color del texto */
+            padding: 20px; /* Espaciado interno */
+            margin: 10px; /* Espaciado externo */
+            flex: 1 1 calc(30% - 20px); /* 3 bloques por fila, con espacio */
+            box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+            border-radius: 5px; /* Esquinas redondeadas */
+            text-align: justify/* Texto justificado derecha*/
+        }
+        img {
+            width: 200px; /* Ajusta el tamaño de la imagen */
+            height: auto; /* Mantiene la proporción de la imagen */
+            margin-right: 10px; /* Espacio entre la imagen y el título */
+            border-radius: 4px; /* Esquinas redondeadas (opcional) */
         }
         h1, h2, h3 {
-            color: #333;
+            color: black; /* Color del título */
+            font-size: 30px; /* Tamaño del título */
+        }
+        p {
+            font-size: 18px; /* Tamaño de la fuente del párrafo */
         }
         .section {
-            margin-bottom: 20px;
-        }
-        .contact-info, .skills, .education, .experience {
-            margin-bottom: 15px;
+            margin-bottom: 35px;
         }
         footer {
-            margin-top: 20px;
-            text-align: center;
+            margin-top: 35px;
+            text-align: justify;
             font-size: 0.9em;
         }
         a {
@@ -38,8 +55,9 @@
     </style>
 </head>
 <body>
-
-    <h1>Bianca Gómez</h1>
+<div class="titulo-con-imagen">
+        <img src="C:\Users\Usuario\Downloads\1-removebg-preview.jpg" alt="Descripción de la imagen">
+  <h1>Bianca Gómez</h1>
 	<h3><li>Instrumentadora Quirúrgica</li></h3>
     Soy instrumentadora quirúrgica con una sólida experiencia en la asistencia durante procedimientos quirúrgicos. 
 He desempeñado un papel en la organización y supervisión de equipos de instrumentadores quirúrgicos, optimizando procesos y asegurando una operación eficaz.  Mi experiencia también abarca funciones administrativas, como el control de cajas, reposiciones e inventarios, lo que me ha proporcionado una visión integral del funcionamiento de los departamentos quirúrgicos. Mi compromiso con la excelencia me impulsa a buscar oportunidades que me permitan seguir creciendo en mi carrera como instrumentadora quirúrgica, aplicando mi experiencia y habilidades para contribuir a la calidad del cuidado del paciente y al éxito del equipo quirúrgico.
@@ -96,29 +114,32 @@ Instrumentación en diferentes centros asistenciales de:
     <div class="section education">
         <h2>Educación</h2>
         <h3>Universidad Nacional de Asunción
-Facultad de Ciencias Médicas 
-<li>Licenciada en Instrumentación y área Quirúrgica</li></h3>
+Facultad de Ciencias Médicas</h3>
+<li>Licenciada en Instrumentación y área Quirúrgica</li>
         <p>2018-2022</p>
         
-        <h3>Colegio Nacional Asunción Escalada 
-<li>Bachiller Técnico en Informática</li></h3>
+        <h3>Colegio Nacional Asunción Escalada</h3> 
+<li>Bachiller Técnico en Informática</li>
         <p>2013-2015</p>
         
     </div>
 
-    <div class="section skills">
-        <h2>Habilidades</h2>
+    <div class="container">
+	<div class=bloque">
+        <p><h2>Habilidades</h2>
         <ul>
             <li>Conocimiento y manejo de Microsoft Word, Excel, PowerPoint </li>
             <li>Habilidad para redactar documentos, notas, actas. </li>
-            <li>Capacidad de hablar frente al público.
+            <li>Capacidad de hablar frente al público.</p>
+	</div>
         </ul>
+	<div class="bloque">
         <h3>Habilidades Blandas</h3>
         <ul>
-            <li>Liderazgo. </li>
+            <p><li>Liderazgo. </li>
             <li>Organización de equipos </li>
 	    <li>Capacidad de trabajo bajo presión</li>
-        </ul>
+        </p> </ul>
     </div>
 
     <div class="section contact-info">
